@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-rajdhani: 'Rajdhani', sans-serif;
+  --font-exo2: 'Exo 2', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: var(--font-exo2), sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #cc0000;
+  border-radius: 2px;
+}
+
+/* Radial vignette background */
+.bg-vignette {
+  background: radial-gradient(ellipse at center, #1a1a1a 0%, #0d0d0d 70%);
+  position: relative;
+  z-index: 1;
+}
+
+/* Card styling - moved from inline styles to CSS class */
+.card-link {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(204,0,0,0.06), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.card-link:hover::before {
+  transform: translateX(100%);
+}
+
+.card-link:hover {
+  border-color: rgba(204,0,0,0.5) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(204, 0, 0, 0.15);
+}
+
+/* Underline draw animation */
+.underline-draw {
+  position: relative;
+  display: block;
+  height: 3px;
+  background: transparent;
+  overflow: hidden;
+}
+.underline-draw::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #cc0000, #ff4444, #cc0000);
+  animation: underlineDraw 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.4s;
+}
+
+@keyframes underlineDraw {
+  to { width: 100%; }
+}
+
+/* Staggered animation delays */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+.delay-7 { animation-delay: 0.7s; }
+.delay-8 { animation-delay: 0.8s; }
+.delay-9 { animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-item {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Logo drop-in */
+.logo-drop {
+  opacity: 0;
+  animation: fadeInDown 0.7s ease forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Info tooltip */
+.info-btn {
+  transition: background 0.2s, color 0.2s;
+}
+.info-btn:hover {
+  background: rgba(204,0,0,0.3);
+  color: #fff;
+}
+
+/* Section divider */
+.section-gap {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #2a2a2a 30%, #2a2a2a 70%, transparent);
+  margin: 8px 0;
+}
+
+/* Ensure content is above background */
+main {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,178 @@
+// src/data/links.js
+
+export const socialLinks = [
+  {
+    id: "website",
+    label: "Visit website",
+    sublabel: "posakbari.com",
+    href: "https://posakbari.com",
+    icon: "globe",
+    color: "#3b9eff",
+    showInfo: true,
+    info: {
+      title: "Official Website",
+      description: "Explore our full clothing collection, seasonal offers, and new arrivals at posakbari.com.",
+      badge: "🌐 Web",
+      stats: [
+        { label: "Products", value: "300+" },
+        { label: "Updated", value: "Daily" },
+      ],
+      cta: "Visit Now →",
+    },
+  },
+  {
+    id: "facebook1",
+    label: "Facebook",
+    sublabel: "Main Page",
+    href: "https://facebook.com/posakbari",
+    icon: "facebook",
+    color: "#1877f2",
+    showInfo: true,
+    info: {
+      title: "Posakbari — Facebook",
+      description: "Follow our main Facebook page for new collections, flash sales, and style inspiration.",
+      badge: "📘 Facebook",
+      stats: [
+        { label: "Followers", value: "15K+" },
+        { label: "Posts/week", value: "5–7" },
+      ],
+      cta: "Follow Page →",
+    },
+  },
+  {
+    id: "instagram",
+    label: "Instagram",
+    sublabel: "@posakbari",
+    href: "https://instagram.com/posakbari",
+    icon: "instagram",
+    color: "#e1306c",
+    showInfo: true,
+    info: {
+      title: "Posakbari — Instagram",
+      description: "Daily outfit reels, lookbooks, and styling tips. Follow for fresh fashion every day.",
+      badge: "📸 Instagram",
+      stats: [
+        { label: "Followers", value: "10K+" },
+        { label: "Reels/week", value: "4–5" },
+      ],
+      cta: "Follow →",
+    },
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    sublabel: "@posakbari",
+    href: "https://tiktok.com/@posakbari",
+    icon: "tiktok",
+    color: "#e0e0e0",
+    showInfo: true,
+    info: {
+      title: "Posakbari — TikTok",
+      description: "Trending fashion videos, outfit unboxings and styling challenges. Join our TikTok community.",
+      badge: "🎵 TikTok",
+      stats: [
+        { label: "Followers", value: "6K+" },
+        { label: "Likes", value: "70K+" },
+      ],
+      cta: "Follow on TikTok →",
+    },
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    sublabel: "Posakbari Official",
+    href: "https://youtube.com/@posakbari",
+    icon: "youtube",
+    color: "#ff0000",
+    showInfo: true,
+    info: {
+      title: "Posakbari — YouTube",
+      description: "Fashion hauls, style guides, and fabric quality reviews. Subscribe to stay on trend.",
+      badge: "▶️ YouTube",
+      stats: [
+        { label: "Subscribers", value: "4K+" },
+        { label: "Videos", value: "60+" },
+      ],
+      cta: "Subscribe →",
+    },
+  },
+  {
+    id: "telegram",
+    label: "Telegram",
+    sublabel: "Official Channel",
+    href: "https://t.me/posakbari",
+    icon: "telegram",
+    color: "#26a5e4",
+    showInfo: true,
+    info: {
+      title: "Posakbari — Telegram",
+      description: "Get instant stock alerts, exclusive discount codes, and direct customer support.",
+      badge: "✈️ Telegram",
+      stats: [
+        { label: "Members", value: "3K+" },
+        { label: "Updates/day", value: "4–6" },
+      ],
+      cta: "Join Channel →",
+    },
+  },
+  {
+    id: "facebook2",
+    label: "Facebook",
+    sublabel: "Community Group",
+    href: "https://facebook.com/groups/posakbari",
+    icon: "facebook",
+    color: "#1877f2",
+    showInfo: true,
+    info: {
+      title: "Posakbari — Community",
+      description: "Our buyer community group. Share your looks, post reviews, and connect with other shoppers.",
+      badge: "👥 Group",
+      stats: [
+        { label: "Members", value: "5K+" },
+        { label: "Active", value: "Daily" },
+      ],
+      cta: "Join Group →",
+    },
+  },
+];
+
+export const callLinks = [
+  {
+    id: "call-muktagacha",
+    label: "Call Now",
+    sublabel: "Muktagacha Branch",
+    href: "tel:+8801XXXXXXXXX",
+    icon: "phone",
+    color: "#22c55e",
+    showInfo: true,
+    info: {
+      title: "Muktagacha Branch",
+      description: "Visit our Muktagacha showroom to try on clothes in person. Open 7 days a week.",
+      badge: "📍 Muktagacha",
+      stats: [
+        { label: "Hours", value: "9am–9pm" },
+        { label: "Days", value: "Sat–Thu" },
+      ],
+      cta: "Call Branch →",
+    },
+  },
+  {
+    id: "call-jamalpur",
+    label: "Call Now",
+    sublabel: "Jamalpur Branch",
+    href: "tel:+8801XXXXXXXXX",
+    icon: "phone",
+    color: "#22c55e",
+    showInfo: true,
+    info: {
+      title: "Jamalpur Branch",
+      description: "Our Jamalpur showroom serves greater Jamalpur. Drop in or call ahead for availability.",
+      badge: "📍 Jamalpur",
+      stats: [
+        { label: "Hours", value: "9am–9pm" },
+        { label: "Days", value: "Sat–Thu" },
+      ],
+      cta: "Call Branch →",
+    },
+  },
+];

@@ -1,0 +1,42 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a0000"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="textgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff5555"/>
+      <stop offset="100%" stop-color="#880000"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+
+  <!-- Red border ring -->
+  <circle cx="256" cy="256" r="244" fill="none" stroke="#cc0000" stroke-width="6" opacity="0.8"/>
+
+  <!-- Hanger hook -->
+  <path d="M256 60 C256 60 256 90 278 102 C300 114 318 138 304 162 C290 186 256 186 256 186"
+        stroke="url(#textgrad)" stroke-width="14" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+  <circle cx="256" cy="62" r="12" fill="#ff4444" filter="url(#glow)"/>
+
+  <!-- Left sleeve -->
+  <path d="M96 200 L56 240 L96 268 L140 228 L140 200 Z" fill="#990000" opacity="0.95"/>
+  <!-- Right sleeve -->
+  <path d="M416 200 L456 240 L416 268 L372 228 L372 200 Z" fill="#990000" opacity="0.95"/>
+  <!-- Shirt body -->
+  <path d="M140 192 L140 390 Q256 415 372 390 L372 192 L256 170 Z" fill="#880000" opacity="0.92"/>
+  <!-- Collar left -->
+  <path d="M140 192 L256 170 L200 215 Z" fill="#cc2200"/>
+  <!-- Collar right -->
+  <path d="M372 192 L256 170 L312 215 Z" fill="#cc2200"/>
+
+  <!-- PB monogram -->
+  <text x="256" y="325" text-anchor="middle" font-size="72" font-weight="900"
+        font-family="Arial, sans-serif" fill="rgba(255,200,200,0.9)" letter-spacing="4">PB</text>
+</svg>
